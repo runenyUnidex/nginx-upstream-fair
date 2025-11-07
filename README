@@ -13,6 +13,12 @@ Further information can be found on http://nginx.localdomain.pl/
 Ezra Zygmuntowicz has a good writeup of the fair proxy load balancer and how to use it here:
 http://brainspl.at/articles/2007/11/09/a-fair-proxy-balancer-for-nginx-and-mongrel
 
+Causes of the fork:
+--
+modified default_port to no_port.
+modified openssl3 SSL_SESSION_up_ref(ssl_session)
+
+--
 
 Installation:
 --
@@ -50,4 +56,3 @@ http://github.com/gnosek/nginx-upstream-fair/tree/master
 http://git.localdomain.pl/?p=nginx-upstream-fair.git;a=summary
 
 Please feel free to fork the project at GitHub and submit pull requests or patches.
-
